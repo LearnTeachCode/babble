@@ -10,3 +10,4 @@ def __init__(self, first_name=None, last_name=None,
         print self.display_name, "<" + self.email + ">" 
 
 # Location, Profile Pic -> HTML, Call? Active or Inactive?
+##
