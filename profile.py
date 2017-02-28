@@ -63,3 +63,7 @@ class Profile:
     def new_number(self):
         print "deleter of new_number called"
         del self.new_number
+	
+	
+    #def print_info(self):
+        #print self.username, "<" + self.email + ">" 
