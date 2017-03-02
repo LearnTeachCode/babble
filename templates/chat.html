@@ -3,8 +3,13 @@
   <head>
     <title>Hello world!</title>
   </head>
-  <body>
-    <script src="https://unpkg.com/mithril/mithril.js"></script>
+  <body>    
+    <div id="chatDiv">
+      <ul id="chatLog">
+      </ul>
+      <input type="text" id="chatBox" value="Type message here"/>
+      <button type="submit" id="chatButton">Send</button>
+    </div>
     <script src="{{ static_url('js/chat.js') }}"></script>
   </body>
 </html>

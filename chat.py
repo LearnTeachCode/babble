@@ -4,16 +4,14 @@ import tornado.websocket
 
 class ChatSocket(tornado.websocket.WebSocketHandler):
     def open(self):
-        pass
+        print("Socket Opened")
     
     def on_message(self, message):
-        pass
-    
-    def write_message(self, message):
-        pass
+        print(message)
+        self.write_message(message)
     
     def on_close(self):
-        pass
+        print("Socket Closed")
 
 class ChatHandler(tornado.web.RequestHandler):
     def get(self):
