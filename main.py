@@ -2,7 +2,7 @@
 import tornado.ioloop
 import tornado.web
 import os.path
-
+from config import BABBLE_LOOP
 from chat import ChatSocket, ChatHandler
 
 class MainHandler(tornado.web.RequestHandler):
@@ -23,4 +23,4 @@ def make_app():
 if __name__ == "__main__":
   app = make_app()
   app.listen(8888)
-  tornado.ioloop.IOLoop.current().start()
+  BABBLE_LOOP.start()
